@@ -372,7 +372,8 @@ span{
     height:40rem;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border:0.2rem solid #deb992;
+    
 }
 .gallery .box-container .box:hover .content{
     display: flex;
@@ -395,7 +396,7 @@ span{
     width:100%;
     padding:2rem;
     text-align:center;
-    border:0.2rem solid #222;
+    border:0.2rem solid #deb992;
     display: none;
 }
 .gallery .box-container .box .content h3{
@@ -415,19 +416,178 @@ span{
 }
 
 
+
+
+.outerdiv
+{
+    border-top: 1px solid #deb992;
+	width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerdiv {
+    transform: scale(1.5);
+    margin: 0.1rem;
+    display: grid;
+    grid-gap: 2.1rem;
+    grid-template-columns: repeat(4, 25rem); /* Increase the column width */
+}
+
+.eachdiv
+{
+	padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    
+    color: white;
+}
+.div1
+{
+    border: 1px solid #deb992;
+	background: white;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-repeat: no-repeat;
+    background-position-x: 25rem;
+}
+.div2
+{
+    border: 1px solid #deb992;
+	background: white;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.div3
+{
+    border: 1px solid #deb992;
+	background: white;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: black;
+}
+.div4
+{
+    border: 1px solid #deb992;
+	background: white;
+	grid-column: 1/2;
+    grid-row: 2/3;
+    color: black;
+}
+.div5
+{
+    border: 1px solid #deb992;
+	background: white;
+	grid-column: 2/4;
+    grid-row: 2/3;
+}
+.userdetails
+{
+	display: flex;
+}
+.imgbox
+{
+	margin-right: 1rem;
+}
+.imgbox img
+{
+	border-radius: 50%;
+	width: 2rem;
+	border: 2px solid #deb992;
+}
+.detbox
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detbox p
+{
+	margin: 0;
+}
+.detbox .name
+{
+	color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+.detbox .name.dark
+{
+	color: #49505A;
+}
+.detbox .designation
+{
+	color: hsl(0, 0%, 81%);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.detbox .designation.dark
+{
+	color: #deb992;
+}
+.review h4
+{
+	font-size: 1.4rem;
+	color: #deb992;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+.review.dark h4{
+	color:#deb992;
+}
+.review p
+{
+	font-size: 0.95rem;
+    color: #666;
+    font-weight: 500;
+    opacity: 50%;
+    line-height: 1.5;
+}
+.review.dark p{
+	color: #666;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .innerdiv {
+        transform: scale(0.8); /* Adjust the scale value as needed */
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .innerdiv {
+        transform: scale(0.7); /* Adjust the scale value as needed */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .div1 {
+        background-position-x: 10rem;
+    }
+    .innerdiv {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1); /* Adjust the scale value as needed */
+        margin: 2rem;
+        margin-bottom: 5rem;
+    }
+}
+
+
+
 .services{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
-    gap:2rem;
+    gap:6rem;
     background: #deb992;
 }
 .services .box{
     text-align: center;
-    padding:2rem;
+    padding:1rem;
 }
-.services .box img{
-    height:10rem;
-}
+
 .services .box h3{
     padding:1rem 0;
     font-size: 2rem;
@@ -441,12 +601,13 @@ span{
 
 .footer .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* Adjusted minmax width */
+    gap: 1rem; /* Reduced the gap between columns */
+    
 }
 .footer .box-container .box h3{
     font-size: 2.2rem;
-    color: #222;
+    color: #deb992;
     padding:1rem 0;
 }
 .footer .box-container .box .link{
@@ -477,11 +638,10 @@ span{
     background: #eee;
     text-align: center;
     color: #deb992;
-    margin-right: .5rem;
 }
 .footer .box-container .box .share a:hover{
     color: #fff;
-    background: #F08080;
+    background: #deb992;
 }
 
 .footer .credit{
@@ -490,7 +650,7 @@ span{
     padding-top:3rem;
     margin-top: 3rem;
     font-size: 2rem;
-    border-top: 0.2rem solid #222;
+    border-top: 0.1rem solid #deb992;
     color: #deb992;
 }
 
