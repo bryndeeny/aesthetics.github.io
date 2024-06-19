@@ -59,6 +59,7 @@ span{
         transform: translateY(-4rem) scale(0.4);
     }
 }
+
 .header{
     position: sticky;
     top: 0;
